@@ -13,7 +13,6 @@ describe('Search Gym Use Case', () => {
 
   it('should be able to search for gyms', async () => {
     await gymsRepository.create({
-      id: 'gym-01',
       title: 'JavaScript Gym',
       description: null,
       phone: null,
