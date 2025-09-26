@@ -21,6 +21,7 @@ export class CheckInUseCase {
   constructor(
     private checkInsRepository: CheckInsRepository,
     private gymsRepository: GymsRepository,
+    // eslint-disable-next-line prettier/prettier
   ) { }
 
   async execute({
