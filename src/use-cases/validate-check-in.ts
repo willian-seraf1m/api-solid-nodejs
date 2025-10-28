@@ -27,12 +27,6 @@ export class ValidateCheckInUseCase {
       throw new ResourceNotFoundError()
     }
 
-    // const currentDate = new Date()
-
-    // const maxDateValidateCheckIn = new Date(
-    //   checkIn.created_at.getTime() + 20 * 60 * 1000,
-    // )
-
     const distanceInMinutesFromCheckInCreation = dayjs(new Date()).diff(
       checkIn.created_at,
       'minutes',
